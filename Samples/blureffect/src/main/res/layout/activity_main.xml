@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_renderer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<view-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/ic_full2"/>-->
+
+
+    <com.android.blureffect.GLEffectView
+        android:id="@+id/gl_effect_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <SeekBar android:id="@+id/seek_bar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"/>
+</RelativeLayout>

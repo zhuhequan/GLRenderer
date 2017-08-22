@@ -1,0 +1,4 @@
+include 'blureffect','wave','renderer','glsleffect','glede','eglbitmap'
+
+include ':glrenderer'
+project(':glrenderer').projectDir = new File(settingsDir, '../GLRenderer/glrenderer')
