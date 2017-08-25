@@ -2,6 +2,7 @@ package com.android.glede;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.opengl.GLES20;
 import android.util.Log;
 
 import com.android.common.renderer.effect.DrawInfo;
@@ -111,6 +112,7 @@ public class DrawGledeFunctor extends DrawGLFunctor {
         }
 
         canvas.onRenderPreDraw(glInfo);
+        GLES20.glClearColor(0f, 0f, 0f, 0f);
         /**step 1*/
         int width = mSourceBounds.width();
         int height = mSourceBounds.height();
@@ -158,6 +160,7 @@ public class DrawGledeFunctor extends DrawGLFunctor {
                 mSourceBounds.width(),
                 mSourceBounds.height());
         mRenderInfo.flipProjV = true;
+        mRenderInfo.blend = true;
         mRenderInfo.viewportWidth = glInfo.viewportWidth;
         mRenderInfo.viewportHeight = glInfo.viewportHeight;
         mRenderInfo.drawOp = mDrawOp;

@@ -30,6 +30,7 @@ public class EffectImageView extends ImageView {
 
     @Override
     protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
         mRatio = mRatio + mOperator * 0.02f;
         if (mRatio > 2.0f) {
             mRatio = 2.0f;

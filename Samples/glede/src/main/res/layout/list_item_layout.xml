@@ -11,6 +11,6 @@
     <com.android.glede.EffectImageView
         android:id="@android:id/icon"
         android:layout_centerInParent="true"
-        android:layout_width="640dp"
-        android:layout_height="320dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
